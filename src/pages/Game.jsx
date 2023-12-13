@@ -4,8 +4,8 @@ import {useDispatch, useSelector} from 'react-redux';
 import {setCategories} from "../redux/gameSlice";
 import Card from "../components/Card";
 import {useNavigate} from "react-router-dom";
-import {saveUserName, saveTotalValue, getAllPlayers} from "../redux/modal";
-import {getTrue, getFalse, removeTrue, removeFalse} from '../redux/myStat'
+import {saveTotalValue, getAllPlayers} from "../redux/modal";
+import {removeTrue, removeFalse} from '../redux/myStat'
 import ButtonUi from "../components/Mui/Button";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -88,7 +88,7 @@ function Game() {
 
     return (
                <div className='game'>
-                    <h1 className='game__title'>Своя Игра</h1>
+                    <h1 className='game__title'>Jeopardy Game!</h1>
                     <div className='game__content'>
                         <div className='game__person'>
                             <h2  onClick={() => setActive(true)}>Посмотреть мою статистику</h2>

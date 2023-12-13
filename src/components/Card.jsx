@@ -1,11 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
-import CardMUI from "./Mui/CardMUI";
 import ButtonCard from "./Mui/CardMUI";
 import ButtonUi from "./Mui/Button";
 import InputUi from "./Mui/Input";
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {getMyStatistics} from "../redux/myStat";
 import {useDispatch} from "react-redux";
 import {getTrue, getFalse} from "../redux/myStat";
 
@@ -78,7 +75,6 @@ const Card = ({ question, answers, setAnswerBool, setAnswerValue, answerBool, an
                     question.value
                 }
             </ButtonCard>
-            {/*onClick={(e) => e.target.className.includes('active') ? setDisplay(false) : ''}*/}
             <div  className={`display ${display ? 'display_active' : ''}`} style={{display: display ? 'block' : 'none'}}>
                 <div className='popup'>
                     <form onSubmitCapture={sendAnswer} className='popup__content'>
