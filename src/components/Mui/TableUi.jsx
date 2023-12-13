@@ -10,7 +10,7 @@ import Paper from '@mui/material/Paper';
 import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {getAllPlayers, saveTotalValue, saveUserName} from "../../redux/modal";
+import {saveTotalValue} from "../../redux/modal";
 import ButtonUi from "./Button";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -63,11 +63,6 @@ const TableUi = () => {
         navigate('/game')
     }
 
-
-    // const endGameHandler = () => {
-    //     dispatch(getAllPlayers({name: userName, answerTotal: answerTotal}))
-    //     navigate('/statistics');
-    // };
     return (
         <>
             <TableContainer component={Paper}>
@@ -95,7 +90,6 @@ const TableUi = () => {
                 </Table>
             </TableContainer>
             <div style={{justifyContent: 'center', display: 'flex', columnGap: '20px', marginTop: '20px'}}>
-                {/*<ButtonUi  onClick={playAgainHandler} children={'Продолжить игру'}/>*/}
                 <ButtonUi style={{background: 'red'}}  onClick={exitHandler} children={'Выйти'}/>
             </div>
         </>

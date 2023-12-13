@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const {userName} = useSelector(state => state.modal)
-    const x = new RegExp(/^[a-zA-Zа-яА-Я0-9_]{2,}$/)    ///[a-zA-Z][a-zA-Z0-9-_\.]/g
+    const x = new RegExp(/^[a-zA-Zа-яА-Я0-9_]{2,}$/)
     const [name, setName] = useState('')
     let postalResult = x.test(name)
 
