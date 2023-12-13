@@ -2,7 +2,6 @@ import Login from "./pages/Login";
 import {Route, Routes} from "react-router-dom";
 import Game from "./pages/Game";
 import Statistics from "./pages/Statistics";
-
 import './scss/style.scss'
 
 function App() {
