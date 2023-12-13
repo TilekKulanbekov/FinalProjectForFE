@@ -5,7 +5,7 @@ To start this project you have to run this commands.
 npm i
 npm start
 
-deployment-lnik: 
+deployment-lnik: https://657972d17b7aed76399917b5--incandescent-daffodil-1829bc.netlify.app/
 
 screenshots here
 ![image](https://github.com/TilekKulanbekov/FinalProjectForFE/assets/73649961/80b75fbb-d234-4647-8df5-0c345db0977d)
