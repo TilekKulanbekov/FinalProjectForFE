@@ -5,6 +5,7 @@ To start this project you have to run this commands.
 npm i
 npm start
 
+YouTube-link: https://youtu.be/PFndycFDgTc
 deployment-lnik: https://657972d17b7aed76399917b5--incandescent-daffodil-1829bc.netlify.app/
 
 screenshots here
